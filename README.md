@@ -13,16 +13,10 @@ http://stackoverflow.com/questions/311654/public-free-web-services-for-testing-s
 
 
 ## Features
-(NOT READY) Support both 2001 (v1.1) and 2003 (v1.2) XML schema.
-(NOT READY) Support array, array of structs, dictionary and sets.
-(NOT READY) Support for user-defined object with serialization of complex data types and array of complex data types, even embedded multilevel structures.
-(NOT READY) Supports ASMX Services, WCF Services (SVC) and now also the WSDL definitions.
-(NOT READY) Supports Basic, Digest and NTLM Authentication, WS-Security, Client side Certificate and custom security header.
-(NOT READY) AES256 or 3DES Encrypt/Decrypt data without SSL security.
-(NOT READY) An example of service and how to use it is included in source code.
-
-- [ ] a task list item
-- [ ] list syntax required
-- [ ] normal **formatting**, @mentions, #1234 refs
-- [ ] incomplete
-- [x] completed
+- [ ] Support both 2001 (v1.1) and 2003 (v1.2) XML schema.
+- [ ] Support array, array of structs, dictionary and sets.
+- [ ] Support for user-defined object with serialization of complex data types and array of complex data types, even embedded multilevel structures.
+- [ ] Supports ASMX Services, WCF Services (SVC) and now also the WSDL definitions.
+- [ ] Supports Basic, Digest and NTLM Authentication, WS-Security, Client side Certificate and custom security header.
+- [ ] AES256 or 3DES Encrypt/Decrypt data without SSL security.
+- [ ] An example of service and how to use it is included in source code.
