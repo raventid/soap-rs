@@ -20,3 +20,9 @@ http://stackoverflow.com/questions/311654/public-free-web-services-for-testing-s
 (NOT READY) Supports Basic, Digest and NTLM Authentication, WS-Security, Client side Certificate and custom security header.
 (NOT READY) AES256 or 3DES Encrypt/Decrypt data without SSL security.
 (NOT READY) An example of service and how to use it is included in source code.
+
+- [ ] a task list item
+- [ ] list syntax required
+- [ ] normal **formatting**, @mentions, #1234 refs
+- [ ] incomplete
+- [x] completed
