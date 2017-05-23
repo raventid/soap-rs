@@ -11,6 +11,10 @@ Client is planned to support SOAP 1.2 and SOAP 1.1. Right now I think it would b
 For teting purposes I use some services from list here.
 http://stackoverflow.com/questions/311654/public-free-web-services-for-testing-soap-client
 
+To provide a better user experiance we are looking at nice and functional SOAP libraries on other platforms:
+- http://php.net/manual/en/soapclient.soapclient.php
+- http://savonrb.com/version3/
+- https://github.com/priore/SOAPEngine
 
 ## Features
 - [ ] Support both 2001 (v1.1) and 2003 (v1.2) XML schema.
