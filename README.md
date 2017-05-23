@@ -20,7 +20,10 @@ To provide a better user experiance we are looking at nice and functional SOAP l
 - [ ] Support both 2001 (v1.1) and 2003 (v1.2) XML schema.
 - [ ] Support array, array of structs, dictionary and sets.
 - [ ] Support for user-defined object with serialization of complex data types and array of complex data types, even embedded multilevel structures.
-- [ ] Supports ASMX Services, WCF Services (SVC) and now also the WSDL definitions.
+- [ ] Supports ASMX Services, WCF Services (SVC) and the WSDL definitions.
 - [ ] Supports Basic, Digest and NTLM Authentication, WS-Security, Client side Certificate and custom security header.
 - [ ] AES256 or 3DES Encrypt/Decrypt data without SSL security.
 - [ ] An example of service and how to use it is included in source code.
+- [ ] Different WSDL caching mods.
+- [ ] Custom request headers.
+- [ ] Request compression with gzip or other provider.
