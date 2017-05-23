@@ -15,6 +15,8 @@ To provide a better user experiance we are looking at nice and functional SOAP l
 - http://php.net/manual/en/soapclient.soapclient.php
 - http://savonrb.com/version3/
 - https://github.com/priore/SOAPEngine
+- http://www.cs.fsu.edu/~engelen/soap.html
+- http://axis.apache.org/axis/
 
 ## Features
 - [ ] Support both 2001 (v1.1) and 2003 (v1.2) XML schema.
