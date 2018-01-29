@@ -11,7 +11,7 @@ Client is planned to support SOAP 1.2 and SOAP 1.1. Right now I think it would b
 For teting purposes I use some services from list here.
 http://stackoverflow.com/questions/311654/public-free-web-services-for-testing-soap-client
 
-To provide a better user experiance we are looking at nice and functional SOAP libraries on other platforms:
+To provide a better user experience we are looking at nice and functional SOAP libraries on other platforms:
 - http://php.net/manual/en/soapclient.soapclient.php
 - http://savonrb.com/version3/
 - https://github.com/priore/SOAPEngine
@@ -30,3 +30,4 @@ To provide a better user experiance we are looking at nice and functional SOAP l
 - [ ] Custom request headers.
 - [ ] Request compression with gzip or other provider.
 - [ ] Detailed documentation which covers every component.
+- [ ] This is a Rust library, so it should be fast, like really fast.
