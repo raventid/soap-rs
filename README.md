@@ -29,3 +29,4 @@ To provide a better user experiance we are looking at nice and functional SOAP l
 - [ ] Different WSDL caching mods.
 - [ ] Custom request headers.
 - [ ] Request compression with gzip or other provider.
+- [ ] Detailed documentation which covers every component.
