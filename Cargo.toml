@@ -1,8 +1,16 @@
 [package]
 name = "soap"
 version = "0.0.1"
-authors = ["Julian Kulesh <julian.kulesh@kupibilet.ru>"]
+authors = ["Julian Kulesh <juliankul@gmail.com>"]
 description = "SOAP client for Rust programming language"
 license = "MIT"
 
 [dependencies]
+hyper = "0.10.10"
+xml-rs = "0.4.1"
+encoding = "0.2.33"
+error-chain = "0.10.0"
+clippy = {version = "*", optional = true}
+
+[[example]]
+name = "read"
