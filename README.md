@@ -20,6 +20,10 @@ To provide a better user experience we are looking at nice and functional SOAP l
 - http://www.cs.fsu.edu/~engelen/soap.html
 - http://axis.apache.org/axis/
 
+## FAQ
+Q: I see a SOAP client, but how to build a server?
+A: Soap-rs is SOAP client library, we understand the need for SOAP client in modern world, but if you are building a Rust service (and you are) don't use SOAP for your partners. Even if they're C# folks. Your new partner might use Ruby, think about them. (Protip: use JSON).
+
 ## Features
 - [ ] Support both 2001 (v1.1) and 2003 (v1.2) XML schema.
 - [ ] Support array, array of structs, dictionary and sets.
