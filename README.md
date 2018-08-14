@@ -21,7 +21,7 @@ To provide a better user experience we are looking at nice and functional SOAP l
 - http://axis.apache.org/axis/
 
 ## FAQ
-### Q: I see a SOAP client, but how to build a server?
+#### Q: I see a SOAP client, but how to build a server?
 A: Soap-rs is SOAP client library, we understand the need for SOAP client in modern world, but if you are building a Rust service (and you are) don't use SOAP for your partners. Even if they're C# folks. Your new partner might use Ruby, think about them. (Protip: use JSON).
 
 ## Features
