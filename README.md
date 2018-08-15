@@ -25,6 +25,8 @@ To provide a better user experience we are looking at nice and functional SOAP l
 A: Soap-rs is SOAP client library, we understand the need for SOAP client in modern world, but if you are building a Rust service (and you are) don't use SOAP for your partners. Even if they're C# folks. Your new partner might use Ruby, think about them. (Protip: use JSON).
 #### Q: My partner send me some XSD files, but there's no WSDL, can I use this library?
 A: Short: XSD is not a standard way to describe SOAP service. In practice though it happens sometimes. We'll try to support XSD base client in future, but expect this to be harder for you (you might have to write glue code).
+#### Q: Well, I actually have to send just one request to my partner and I have XML example, can I generate structs just for this request?
+A: Again, it's not a valid case for SOAP library, but yep, it will be possible with same limitation as XSD generation.
 
 ## Features
 - [ ] Support both 2001 (v1.1) and 2003 (v1.2) XML schema.
