@@ -2,6 +2,8 @@
 
 STATUS: WORK IN PROGRESS.
 
+Rust 2018 edition and shiny async/await inside.
+
 SOAP client for Rust programming language.
 
 LICENSE NOTE: Current WSDL implementation is slightly modified version of https://github.com/jaxx/wsdl-rs. WSDL parser will be changed, but it's not a high priority now.
