@@ -4,6 +4,7 @@ version = "0.0.1"
 authors = ["Julian Pokrovsky <juliankul@gmail.com>"]
 description = "SOAP client for Rust programming language"
 license = "MIT"
+edition = "2018"
 
 [dependencies]
 hyper = "0.10.10"
