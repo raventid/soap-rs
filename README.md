@@ -15,6 +15,9 @@ Client is planned to support SOAP 1.2 and SOAP 1.1. Right now I think it would b
 For teting purposes I use some services from list here.
 http://stackoverflow.com/questions/311654/public-free-web-services-for-testing-soap-client
 
+The only working service for now is https://graphical.weather.gov/xml/
+There is a working WSDL for it.
+
 To provide a better user experience we are looking at nice and functional SOAP libraries on other platforms:
 - http://php.net/manual/en/soapclient.soapclient.php
 - http://savonrb.com/version3/
