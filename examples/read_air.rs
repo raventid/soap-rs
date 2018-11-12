@@ -8,23 +8,15 @@ use std::env;
 use soap::Wsdl;
 
 fn main() {
-    // This site is unavailable at the moment, and perhaps forever...
-    // let wsdl = match Wsdl::load_from_url("http://www.webservicex.com/globalweather.asmx?WSDL") {
-    //     Ok(v) => v,
-    //     Err(e) => panic!("Error: {}", e),
-    // };
-
     let tmp_dir = env::current_dir().unwrap().join("examples/");
 
-    // print_wsdl(&wsdl, Some(tmp_dir.join("wsdl_globalweather.txt")))
-    //     .expect("Error while printing WSDL.");
-
-    let wsdl = match Wsdl::load_from_file("examples/etoimik.wsdl") {
+    let wsdl = match Wsdl::load_from_file("examples/Air.wsdl") {
         Ok(v) => v,
         Err(e) => panic!("Error: {}", e),
     };
 
-    print_wsdl(&wsdl, Some(tmp_dir.join("wsdl_etoimik.txt"))).expect("Error while printing WSDL.");
+    // Text representation.
+    print_wsdl(&wsdl, Some(tmp_dir.join("wsdl_air.txt"))).expect("Error while printing WSDL.");
 }
 
 fn print_wsdl(wsdl: &Wsdl, file: Option<PathBuf>) -> Result<(), std::io::Error> {

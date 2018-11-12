@@ -12,5 +12,3 @@ encoding = "0.2.33"
 error-chain = "0.10.0"
 clippy = {version = "*", optional = true}
 
-[[example]]
-name = "read"
