@@ -155,7 +155,9 @@ impl_documented!(WsdlPortType);
 impl_named_item!(WsdlPortType);
 
 #[derive(Debug)]
-pub struct WsdlDocumentation {}
+pub struct WsdlDocumentation {
+    pub text: String
+}
 
 impl Wsdl {
     pub fn load_from_url(url: &str) -> Result<Wsdl> {
@@ -540,7 +542,7 @@ impl WsdlDocumentation {
             }
         }
 
-        Ok(WsdlDocumentation {})
+        Ok(WsdlDocumentation { text: "placeholder".to_string() })
     }
 }
 

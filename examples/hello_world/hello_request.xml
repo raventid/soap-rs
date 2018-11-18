@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<soap:Envelope
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' xmlns:soap='http://schemas.xmlsoap.org/soap/
+               envelope/' xmlns:soapenc='http://schemas.xmlsoap.org/soap/encoding/' soap:encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'> <soap:Body>
+    <n:sayHello xmlns:n='urn:examples:helloservice'> <firstName xsi:type='xsd:string'>World</firstName>
+    </n:sayHello> </soap:Body>
+</soap:Envelope>

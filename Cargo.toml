@@ -11,4 +11,5 @@ xml-rs = "0.4.1"
 encoding = "0.2.33"
 error-chain = "0.10.0"
 clippy = {version = "*", optional = true}
-
+roxmltree = "0.3.0"
+codegen = { git = "https://github.com/raventid/codegen.git" }
