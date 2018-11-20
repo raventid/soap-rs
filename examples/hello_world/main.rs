@@ -20,8 +20,10 @@ fn main() {
     // Extract XSD messages information
     let messages = wsdl.messages;
 
+    // Code generation for types
     let mut types_scope = Scope::new();
 
+    // Types generation
     messages.iter().for_each(|message| {
         let structure = types_scope.new_struct(&message.name);
 
@@ -40,8 +42,36 @@ fn main() {
         });
     });
 
+    // Code generation for parsers
+    let mut parsers_scope = Scope::new();
+
+    // Include xmltree and types
+    parsers_scope.import("types", "*");
+
+    parsers_scope.raw(r#"
+        let response = match roxmltree::Document::parse(&content) {
+            Ok(v) => v,
+            Err(e) => {
+                println!("Error: {}.", e);
+                process::exit(1);
+            }
+        };
+    "#);
+
+    messages.iter().for_each(|message| {
+        message.parts.iter().for_each(|part| {
+            parsers_scope.raw(&format!(r#"
+                                let {field} = response.get({field});
+                              "#,
+                                      field=part.name));
+        });
+    });
+
     let types_file = env::current_dir().unwrap().join("examples/hello_world/").join("types.rs");
-    print_codegen(&types_scope, Some(types_file)).expect("Error while printing code.");
+    print_codegen(&types_scope, Some(types_file)).expect("Error while printing types");
+
+    let parsers_file = env::current_dir().unwrap().join("examples/hello_world/").join("parsers.rs");
+    print_codegen(&parsers_scope, Some(parsers_file)).expect("Error while printing parsers");
 }
 
 fn print_codegen(types_scope: &Scope, file: Option<PathBuf>) -> Result<(), std::io::Error> {
