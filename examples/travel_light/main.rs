@@ -16,7 +16,7 @@ fn main() {
         .unwrap();
         // .join("examples/");
 
-    let path = Path::new(&env::current_dir().unwrap().join("pyton_response.xml")).to_path_buf();
+    let path = Path::new(&env::current_dir().unwrap().join("service_response.xml")).to_path_buf();
 
 
     println!("{:#?}", path);
