@@ -5,3 +5,6 @@
 # Ignore example output files in examples
 /examples/*.txt
 /examples/*/*.txt
+
+# Some general ignores
+.DS_Store
