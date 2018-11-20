@@ -1,7 +1,8 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<SOAP-ENV:Envelope
-    xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/' xmlns:xsi='http://www.w3.org/1999/XMLSchema-instance' xmlns:xsd='http://www.w3.org/1999/XMLSchema'> <SOAP-ENV:Body>
-    <ns1:sayHelloResponse xmlns:ns1='urn:examples:helloservice' SOAP-ENV:encodingStyle=
-                          'http://schemas.xmlsoap.org/soap/encoding/'> <return xsi:type='xsd:string'>Hello, World!</return>
-    </ns1:sayHelloResponse> </SOAP-ENV:Body>
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance" xmlns:xsd="http://www.w3.org/1999/XMLSchema">
+  <SOAP-ENV:Body>
+    <ns1:sayHelloResponse xmlns:ns1="urn:examples:helloservice" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+      <return xsi:type="xsd:string">Hello, World!</return>
+    </ns1:sayHelloResponse>
+  </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
