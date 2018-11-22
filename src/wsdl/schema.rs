@@ -118,6 +118,7 @@ pub struct WsdlMessagePart {
 #[derive(Debug)]
 pub struct WsdlInputBinding {
     pub documentation: Option<WsdlDocumentation>,
+    pub text: String,
 }
 
 impl_documented!(WsdlInputBinding);
@@ -440,6 +441,7 @@ impl WsdlPort {
 impl WsdlOperationBinding {
     fn read(attributes: &[OwnedAttribute]) -> Result<WsdlOperationBinding> {
         let name = find_attribute("name", attributes);
+        let internals = &attributes.get(0).unwrap().value;
 
         Ok(WsdlOperationBinding {
                documentation: None,
@@ -447,7 +449,7 @@ impl WsdlOperationBinding {
                                          ErrorKind::MandatoryAttribute("name".to_string(),
                                                                        "wsdl:operation".to_string())
                                      })?,
-               input: None,
+               input: Some(WsdlInputBinding{documentation: None, text: internals.clone()}),
                output: None,
                fault: None,
            })
