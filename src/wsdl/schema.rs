@@ -441,7 +441,13 @@ impl WsdlPort {
 impl WsdlOperationBinding {
     fn read(attributes: &[OwnedAttribute]) -> Result<WsdlOperationBinding> {
         let name = find_attribute("name", attributes);
-        let internals = &attributes.get(0).unwrap().value;
+        println!("{:?}", attributes);
+
+        let internals = attributes
+            .iter()
+            .map(|attr| attr.value.clone())
+            .collect::<Vec<_>>()
+            .join("");
 
         Ok(WsdlOperationBinding {
                documentation: None,
