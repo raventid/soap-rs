@@ -24,11 +24,3 @@ pub use wsdl::schema::{
     WsdlPort,
     WsdlService
 };
-
-
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-    }
-}
